@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات المعتمرين والحجاج - خدماتنا</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services_final_local.html">خدماتنا</a></li>
+                <li><a href="places.html">أماكن مهمة</a></li>
+                <li><a href="tips.html">نصائح</a></li>
+                <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                <li><a href="team.html">الفريق</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- بداية قسم الخدمات -->
+
+<div class="services-wrapper" id="services-section" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial; direction: rtl; background-color: #f9fbfb; padding: 50px 20px; color: #333; line-height: 1.6;">
+    
+    <style>
+      
+        .services-wrapper h2 {
+            color: #106b24;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            border: none;
+            padding: 0;
+        }
+        .services-wrapper h3 {
+            color: #106b24;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .services-wrapper .sub-title {
+            color: #106b24;
+            border-right: 5px solid #106b24;
+            padding-right: 15px;
+            margin: 30px 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: right;
+        }
+        .services-wrapper .hotel-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .services-wrapper .hotel-card:hover {
+            transform: translateY(-5px);
+        }
+        .services-wrapper .hotels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+    </style>
+
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="color: #106b24; font-size: 2.5rem; margin-bottom: 10px;">خدماتنا المتكاملة في مكة</h2>
+        <p style="color: #666; font-size: 1.1rem; margin: 0;">دليلك الشامل للسكن، النقل، والإرشاد في مكة المكرمة</p>
+    </div>
+
+    <!-- 1. قسم الإرشاد والخريطة -->
+    <div style="max-width: 1200px; margin: 0 auto 60px;">
+        <h3 class="sub-title">إرشاد وتوجيه</h3>
+        <div style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); display: flex; flex-wrap: wrap;">
+            <!-- تم تغيير الرابط إلى مسار محلي: haram_map.jpg -->
+            <div style="flex: 1; min-width: 300px; height: 450px; background-image: url('/src/haram_map.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #fff;"></div>
+            <div style="flex: 1; padding: 40px; min-width: 300px;">
+                <h3 style="color: #106b24; margin-bottom: 15px;">خريطة الحرم المكي الشريف</h3>
+                <p style="line-height: 1.8; color: #555;">نوفر لك خريطة توضيحية دقيقة للمسجد الحرام، تساعدك في التعرف على الأبواب الرئيسية والخدمات المتاحة لضمان رحلة ميسرة.</p>
+                <ul style="padding-right: 20px; color: #555; line-height: 2; margin-top: 15px; list-style-type: disc;">
+                    <li><b>الأبواب الرئيسية:</b> باب الملك عبدالعزيز، باب الملك فهد، وباب الفتح.</li>
+                    <li><b>الخدمات:</b> مواقع السلالم الكهربائية، العربات، ونقاط التوجيه.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. قسم الفنادق -->
+    <div style="max-width: 1200px; margin: 0 auto 60px;">
+        <h3 class="sub-title">أفضل خيارات السكن بمكة</h3>
+        <div class="hotels-grid">
+            <!-- فندق 1: هيلتون مكة  -->
+            <div class="hotel-card">
+                <div style="height: 200px; background-image: url('/src/hilton_makkah.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 20px;">
+                    <div style="color: #ffc107; margin-bottom: 8px; font-weight: bold;">★★★★★ (4.9)</div>
+                    <span style="font-weight: bold; font-size: 1.2rem; color: #106b24; display: block; margin-bottom: 10px;">هيلتون مكة</span>
+                    <p style="font-size: 0.9rem; color: #777; margin: 0;">إطلالة مباشرة على المسجد الحرام مع أرقى مستويات الخدمة الفندقية.</p>
+                </div>
+            </div>
+            <!-- فندق 2: دار التوحيد  -->
+            <div class="hotel-card">
+                <div style="height: 200px; background-image: url('/src/dar_al_tawhid.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 20px;">
+                    <div style="color: #ffc107; margin-bottom: 8px; font-weight: bold;">★★★★★ (4.9)</div>
+                    <span style="font-weight: bold; font-size: 1.2rem; color: #106b24; display: block; margin-bottom: 10px;">دار التوحيد إنتركونتيننتال</span>
+                    <p style="font-size: 0.9rem; color: #777; margin: 0;">يجمع بين الروحانية والرفاهية المطلقة في موقع استثنائي أمام الكعبة.</p>
+                </div>
+            </div>
+            <!-- فندق 3: برج الساعة -->
+            <div class="hotel-card">
+                <div style="height: 200px; background-image: url('/src/conrad_makkah.jpg'); background-size: cover; background-position: center;"></div>
+                <div style="padding: 20px;">
+                    <div style="color: #ffc107; margin-bottom: 8px; font-weight: bold;">★★★★★ (4.8)</div>
+                    <span style="font-weight: bold; font-size: 1.2rem; color: #106b24; display: block; margin-bottom: 10px;">برج الساعة</span>
+                    <p style="font-size: 0.9rem; color: #777; margin: 0;">أيقونة مكة المكرمة، يوفر إطلالات بانورامية خلابة وسهولة الوصول للحرم.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. قسم النقل -->
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h3 class="sub-title">النقل والمواصلات</h3>
+        <div style="background: #106b24; color: white; border-radius: 15px; padding: 30px; display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+            <div style="font-size: 3.5rem; background: rgba(255,255,255,0.1); padding: 15px 25px; border-radius: 50%;">🚌</div>
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #ffffff; margin-top: 0; margin-bottom: 10px; font-weight: bold;">خدمة النقل الترددي (حافلات مكة)</h3>
+                <p style="margin-bottom: 15px; opacity: 0.9;">نضمن لك وصولاً سريعاً ومريحاً للحرم عبر محطات النقل الرئيسية:</p>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 8px;"> <b>محطة كدي:</b> النقل المباشر من مواقف كدي.</li>
+                    <li style="margin-bottom: 8px;"> <b>محطة محبس الجن:</b> تخدم منطقة العزيزية والروضة.</li>
+                    <li style="margin-bottom: 0;"> <b>محطة الأمير متعب:</b> خيارات نقل إضافية في الذروة.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- نهاية قسم الخدمات -->
+
+</body>
+</html>

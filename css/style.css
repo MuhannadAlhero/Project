@@ -1,0 +1,172 @@
+/* 1. استدعاء الخط من جوجل */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+/* 2. التنسيقات العامة للموقع */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* تطبيق خط Almarai بشكل مباشر */
+    font-family: 'Almarai', sans-serif;
+    background-color: #ffffff;
+    color: #716d60; /* لون النص الأساسي */
+    line-height: 1.6;
+    text-align: right; /* بما أن الموقع عربي */
+    direction: rtl;
+}
+
+/* 3. الهيدر وقائمة التنقل */
+header {
+    background-color: #106b24; /* اللون الأخضر (Text More) */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* إضافة أيقونات Font Awesome بجانب النص */
+nav ul li a i {
+    margin-left: 8px;
+}
+
+/* 4. القسم الرئيسي (Hero Section) - كامل الشاشة */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/MECA_Background.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    color: #ffffff;
+    max-width: 700px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* 5. قسم التفاصيل */
+.details-section {
+    padding: 100px 50px;
+}
+
+.details-section h2 {
+    color: #106b24;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* تنسيق الأزرار */
+.main-btn {
+    background-color: #106b24;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* 6. قسم الأهداف - بطاقات جميلة */
+.goals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.goal-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f9f4 100%);
+    border: 2px solid #106b24;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.goal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(16, 107, 36, 0.2);
+    border-color: #f9da6c;
+}
+
+.goal-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #106b24, #0d5620);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2.5rem;
+    color: #f9da6c;
+    transition: all 0.3s ease;
+}
+
+.goal-card:hover .goal-icon {
+    transform: rotate(10deg) scale(1.1);
+    background: linear-gradient(135deg, #0d5620, #106b24);
+}
+
+.goal-card h4 {
+    color: #106b24;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.goal-card p {
+    color: #716d60;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* الفوتر */
+footer {
+    background-color: #716d60;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+.section-title {
+    color: #106b24;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section-title p {
+    color: #716d60; 
+}
