@@ -1,7 +1,6 @@
-/* 1. استدعاء الخط من جوجل */
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 
-/* 2. التنسيقات العامة للموقع */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,18 +8,17 @@
 }
 
 body {
-    /* تطبيق خط Almarai بشكل مباشر */
+
     font-family: 'Almarai', sans-serif;
     background-color: #ffffff;
-    color: #716d60; /* لون النص الأساسي */
+    color: #716d60;
     line-height: 1.6;
-    text-align: right; /* بما أن الموقع عربي */
+    text-align: right;
     direction: rtl;
 }
 
-/* 3. الهيدر وقائمة التنقل */
 header {
-    background-color: #106b24; /* اللون الأخضر (Text More) */
+    background-color: #106b24;
     padding: 20px 0;
 }
 
@@ -40,12 +38,10 @@ nav ul li a {
     font-weight: 700;
 }
 
-/* إضافة أيقونات Font Awesome بجانب النص */
 nav ul li a i {
     margin-left: 8px;
 }
 
-/* 4. القسم الرئيسي (Hero Section) - كامل الشاشة */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/MECA_Background.jpg') center/cover no-repeat;
     height: 100vh;
@@ -161,12 +157,14 @@ footer {
     text-align: center;
     padding: 30px;
 }
+
 .section-title {
     color: #106b24;
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
 }
+
 .section-title p {
-    color: #716d60; 
+    color: #716d60;
 }
