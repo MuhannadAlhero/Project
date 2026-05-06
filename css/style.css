@@ -168,3 +168,7 @@ footer {
 .section-title p {
     color: #716d60;
 }
+nav ul li a:hover {
+    color: #f9da6c;
+    transition: color 0.3s ease;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      font-family: 'Almarai', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+    }
+
+    .faq-container {
+      width: 90%;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .faq-header {
+      text-align: center;
+      color: #106b24;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      border: 1px solid #dfeee3;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .card button {
+      width: 100%;
+      text-align: right;
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      font-family: 'Almarai', sans-serif;
+      font-weight: 700;
+      color: #106b24;
+      cursor: pointer;
+      padding: 0;
+      outline: none;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services_final_local.html">خدماتنا</a></li>
+        <li><a href="Places.html">أماكن مهمة</a></li>
+        <li><a href="tips.html">نصائح</a></li>
+        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+        <li><a href="team.html">الفريق</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="faq-container">
+    <h1 class="faq-header">الأسئلة الشائعة</h1>
+
+    <div class="card">
+      <button onclick="show(0)">متى أفضل وقت؟</button>
+      <p class="answer">في الأوقات الأقل ازدحاماً، وعادةً ما يكون ذلك في الصباح الباكر أو بعد منتصف الليل.</p>
+    </div>
+
+    <div class="card">
+      <button onclick="show(1)">ماذا أحضر؟</button>
+      <p class="answer">يُنصح بإحضار ملابس مريحة، حذاء رياضي للمشي الطويل، زجاجة ماء، ومظلة شمسية.</p>
+    </div>
+    
+    <div class="card">
+      <button onclick="show(2)">هل تتوفر خدمات طبية؟</button>
+      <p class="answer">نعم، تتوفر العديد من المراكز الصحية والمستشفيات الميدانية في محيط الحرم والمشاعر المقدسة لخدمة ضيوف الرحمن على مدار الساعة.</p>
+    </div>
+
+    <div class="card">
+      <button onclick="show(3)">كيف يمكنني التنقل بين المشاعر المقدسة؟</button>
+      <p class="answer">تتوفر حافلات النقل الترددي المخصصة لنقل الحجاج، بالإضافة إلى قطار المشاعر الذي يربط بين منى وعرفات ومزدلفة.</p>
+    </div>
+
+    <div class="card">
+      <button onclick="show(4)">هل يمكنني استخدام هاتفي المحمول؟</button>
+      <p class="answer">نعم، يمكنك استخدام هاتفك. يُنصح بشراء شريحة اتصال محلية عند الوصول للاستفادة من باقات الإنترنت والمكالمات بأسعار مناسبة.</p>
+    </div>
+  </div>
+
+  <script src="/js/script.js"></script>
+
+</body>
+
+</html>

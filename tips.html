@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <style>
+    body {
+      font-family: 'Almarai', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+    }
+
+    /* HEADER */
+    .page-header {
+      text-align: center;
+      padding: 50px 20px;
+      background: #fff;
+    }
+
+    header h1 {
+      color: #106b24;
+    }
+
+    .line {
+      width: 200px;
+      height: 3px;
+      background: #106b24;
+      margin: 10px auto;
+    }
+
+    .page-header p {
+      color: #716d60;
+      font-size: 1.1rem;
+    }
+
+    /* CONTAINER */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 50px auto;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* CARD */
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+      cursor: pointer;
+      border: 1px solid #e0e0e0;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(16, 107, 36, 0.1);
+      border-color: #106b24;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #106b24;
+    }
+
+    .card h3 {
+      color: #106b24;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #716d60;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+    }
+
+    @media (max-width: 576px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services_final_local.html">خدماتنا</a></li>
+        <li><a href="Places.html">أماكن مهمة</a></li>
+        <li><a href="tips.html">نصائح</a></li>
+        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+        <li><a href="team.html">الفريق</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>نصائح للحجاج والمعتمرين</h1>
+    <p>إرشادات مهمة لتجربة مريحة</p>
+    <div class="line"></div>
+  </div>
+
+  <section class="container">
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-tint"></i></div>
+        <h3>الماء</h3>
+        <p>احرص على شرب الماء باستمرار.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-shoe-prints"></i></div>
+        <h3>الراحة</h3>
+        <p>ارتدِ أحذية مريحة للمشي الطويل.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-bullhorn"></i></div>
+        <h3>الإرشاد</h3>
+        <p>اتبع تعليمات الجهات الرسمية.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-clock"></i></div>
+        <h3>الوقت</h3>
+        <p>تجنب أوقات الزحام.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-first-aid"></i></div>
+        <h3>الصحة</h3>
+        <p>احمل معك حقيبة إسعافات أولية وأدويتك الأساسية.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-hand-holding-heart"></i></div>
+        <h3>الصبر</h3>
+        <p>تحلَّ بالصبر والسكينة خصوصاً في أوقات الزحام.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-suitcase-rolling"></i></div>
+        <h3>الأمتعة</h3>
+        <p>سافر بأمتعة خفيفة وتأكد من وجود بطاقة تعريف عليها.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>التواصل</h3>
+        <p>احتفظ بأرقام الطوارئ وجهات الاتصال المهمة.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>

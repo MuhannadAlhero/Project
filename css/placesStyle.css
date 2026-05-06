@@ -1,0 +1,112 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.page-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  direction: rtl;
+  color: #111;
+  background: #ffffff;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 3px solid #106b24;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #106b24;
+  margin-bottom: 0.4rem;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #106b24;
+  border-right: 4px solid #106b24;
+  padding-right: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.section { margin-bottom: 2.5rem; }
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+.place-card {
+  border: 1px solid #a8d5a2;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e8f5e9;
+}
+
+.place-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body { padding: 0.8rem 1rem; }
+
+.place-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #106b24;
+  margin-bottom: 0.3rem;
+}
+
+.place-card p {
+  font-size: 0.82rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.rituals-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.6rem;
+}
+
+.rituals-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #222;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #a8d5a2;
+  border-radius: 8px;
+  background: #e8f5e9;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #106b24;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.tip-box {
+  background: #e8f5e9;
+  border: 1px solid #a8d5a2;
+  border-right: 4px solid #106b24;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  font-size: 0.87rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.tip-box strong { color: #106b24; font-weight: 600; }
