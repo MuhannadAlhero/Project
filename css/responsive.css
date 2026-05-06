@@ -2,7 +2,7 @@
 @media (max-width: 992px) {
 
     /* --- عام --- */
-    .section-title {
+    .details-section .section-title { /* استهداف العنوان في الصفحة الرئيسية فقط */
         font-size: 2.2rem;
     }
 
@@ -36,8 +36,8 @@
         line-height: 1.7;
     }
 
-    .section-title,
-    .page-header h1,
+    .details-section .section-title, /* استهداف العنوان في الصفحة الرئيسية فقط */
+    .page-header h1, 
     .faq-header {
         font-size: 2rem;
     }
@@ -58,6 +58,14 @@
 
     .details-section {
         padding: 50px 20px;
+    }
+
+    /* إصلاحات لصفحة "أماكن مهمة" على الجوال */
+    .page-wrapper {
+        padding: 1.5rem 1rem; /* تقليل الهوامش الداخلية */
+    }
+    .page-wrapper .header h1 {
+        font-size: 1.6rem; /* تصغير عنوان الرأس */
     }
 
     .about-us-grid {
@@ -97,6 +105,10 @@
     /* --- رأس الصفحات الداخلية (النصائح وغيرها) --- */
     .page-header {
         padding: 40px 15px;
+    }
+
+    .page-wrapper .section-title {
+        font-size: 1.1rem; /* التأكد من أن عنوان القسم في صفحة الأماكن لا يكبر حجمه */
     }
 
     .page-header h1 {
