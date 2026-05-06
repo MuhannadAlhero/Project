@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معنا - خدمات المعتمرين والحجاج</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* الحاوية */
+.contact-box {
+    background: white;
+    padding: 30px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(16, 107, 36, 0.15);
+}
+
+/* العنوان */
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.header i {
+    font-size: 40px;
+    color: #106b24;
+}
+.header h2 {
+    margin: 10px 0 0;
+    color: #106b24;
+    font-size: 1.8rem;
+}
+
+/* نص المقدمة */
+.intro-text {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-right: 4px solid #106b24;
+}
+
+/* الحقول */
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: 'Almarai', sans-serif;
+    background: #f9f9f9;
+}
+
+/* زر */
+button {
+    background: linear-gradient(135deg, #716d60, #5a564c);
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: 'Almarai', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+button:hover {
+    background: #106b24;
+}
+
+/* 🎬 الفيديو */
+.video-box{
+    margin-top:15px;
+    text-align:center;
+}
+
+.video-thumb{
+    position:relative;
+    cursor:pointer;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.video-thumb img{
+    width:100%;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.video-thumb:hover img{
+    transform:scale(1.05);
+    filter:brightness(1.1);
+}
+
+.play-button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(16,107,36,0.9);
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.video-thumb:hover .play-button{
+    transform:translate(-50%,-50%) scale(1.1);
+    background:#106b24;
+}
+
+.video-player{
+    display:none;
+    margin-top:10px;
+}
+
+.video-player iframe{
+    width:100%;
+    height:200px;
+    border-radius:12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="services_final_local.html">خدماتنا</a></li>
+            <li><a href="Places.html">أماكن مهمة</a></li>
+            <li><a href="tips.html">نصائح</a></li>
+            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+            <li><a href="team.html">الفريق</a></li>
+            <li><a href="ConatcatUs.html">تواصل معنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="contact-box">
+
+    <div class="header">
+        <i class="fa-solid fa-kaaba"></i>
+        <h2>تواصل معنا</h2>
+    </div>
+
+    <div class="intro-text">
+        نحن فريق يجمعه الشغف وروح التعاون لتحقيق الأفضل دائمًا. نعمل معًا بتناغم، حيث يكمل كل فرد الآخر بخبرته ومهاراته. نؤمن أن النجاح الحقيقي يبدأ من العمل الجماعي.
+        <br><br>
+        <strong>للتواصل المباشر:</strong> aod0506699@gmail.com
+    </div>
+
+    <form action="index.html">
+
+        <input type="text" placeholder="الاسم الكامل" required>
+
+        <input type="email" placeholder="البريد الإلكتروني" required>
+
+        <textarea rows="4" placeholder="اكتب رسالتك أو استفسارك هنا..." required></textarea >
+        <!-- 🎬 الفيديو -->
+        <div class="video-box">
+
+            <div class="video-thumb" onclick="playVideo()">
+                <img src="https://img.youtube.com/vi/e1jLo0XuwhU/hqdefault.jpg" alt="video">
+
+                <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <div id="videoPlayer" class="video-player">
+                <iframe 
+                    src="https://www.youtube.com/embed/e1jLo0XuwhU"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+        <button type="submit">إرسال ✉️</button>
+
+    </form>
+
+</div>
+
+<script>
+function playVideo(){
+    document.querySelector(".video-thumb").style.display = "none";
+    document.getElementById("videoPlayer").style.display = "block";
+}
+</script>
+
+</body>
+</html>

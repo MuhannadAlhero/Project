@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعضاء الفريق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Almarai', sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            margin: 50px auto;
+            width: 90%;
+            max-width: 700px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header i {
+            font-size: 40px;
+            color: #106b24;
+        }
+
+        .header h2 {
+            margin: 10px 0 0;
+            color: #106b24;
+        }
+
+        /* العضو */
+        .member {
+            display: flex;
+            align-items: flex-start;
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s forwards;
+        }
+
+        /* أيقونة فقط */
+        .member i {
+            margin-left: 15px;
+            color: #106b24;
+            font-size: 1.2rem;
+            margin-top: 4px;
+        }
+
+        .member-details p {
+            margin: 0;
+            color: #716d60;
+            font-size: 0.9rem;
+        }
+
+        .member-details strong {
+            color: #333;
+        }
+
+        /* أنيميشن */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services_final_local.html">خدماتنا</a></li>
+                <li><a href="Places.html">أماكن مهمة</a></li>
+                <li><a href="tips.html">نصائح</a></li>
+                <li><a href="faq.html">الأسئلة الشائعة</a></li>
+                <li><a href="team.html">الفريق</a></li>
+                <li><a href="ConatcatUs.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="header">
+            <i class="fa-solid fa-users"></i>
+            <h2>أسماء الفريق</h2>
+        </div>
+
+        <div id="teamList"></div>
+
+    </div>
+
+    <script>
+        let team = [
+            { name: "مهند العطوي", id: "451003131", role: "اشتغل على الواجهة الرئيسية" },
+            { name: "علي حسن بن العكرش", id: "431011676", role: "اشتغل على صفحتين الفريق والتواصل" },
+            { name: "الوليد ماجد ناصر آل معتق", id: "451006964", role: "اشتغل على صفحتين الأسئلة الشائعة والنصائح" },
+            { name: "تركي العنزي", id: "461008614", role: "اشتغل على صفحة الخدمات" },
+            { name: "مهند الزهراني", id: "461004558", role: "اشتغل على صفحة الأماكن" }
+        ];
+
+        // خلط عشوائي
+        team.sort(() => Math.random() - 0.5);
+
+        let container = document.getElementById("teamList");
+
+        // عرض تدريجي
+        team.forEach((member, index) => {
+            let div = document.createElement("div");
+            div.className = "member";
+            div.style.animationDelay = (index * 0.25) + "s";
+
+            div.innerHTML = `
+                <i class="fa-solid fa-user"></i> 
+                <div class="member-details">
+                    <strong>${member.name} - ${member.id}</strong>
+                    <p>${member.role}</p>
+                </div>`;
+
+            container.appendChild(div);
+        });
+    </script>
+
+</body>
+
+</html>
