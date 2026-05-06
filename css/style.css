@@ -79,6 +79,48 @@ nav ul li a i {
     text-align: center;
 }
 
+.about-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.about-us-text .intro {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #716d60;
+}
+
+.about-us-text ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.about-us-text ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.about-us-text ul li i {
+    color: #106b24;
+    font-size: 1.3rem;
+    margin-left: 12px;
+    margin-top: 3px;
+}
+
+.about-us-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
 /* تنسيق الأزرار */
 .main-btn {
     background-color: #106b24;
@@ -90,6 +132,15 @@ nav ul li a i {
     text-decoration: none;
     margin-top: 30px;
     display: inline-block;
+}
+
+/* تنسيق الملاحظة الخاصة */
+#special-note {
+    background-color: #f0f9f4;
+    padding: 20px;
+    border-right: 5px solid #106b24;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
 /* 6. قسم الأهداف - بطاقات جميلة */
