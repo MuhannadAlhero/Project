@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 
-
+/* تنسيق عام لصفحة index ايضاء لnavbar */
 * {
     margin: 0;
     padding: 0;
@@ -201,25 +201,3 @@ nav ul li a i {
     line-height: 1.8;
 }
 
-/* الفوتر */
-footer {
-    background-color: #716d60;
-    color: #ffffff;
-    text-align: center;
-    padding: 30px;
-}
-
-.section-title {
-    color: #106b24;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.section-title p {
-    color: #716d60;
-}
-nav ul li a:hover {
-    color: #f9da6c;
-    transition: color 0.3s ease;
-}
