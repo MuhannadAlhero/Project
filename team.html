@@ -106,11 +106,14 @@
             <h2>أسماء الفريق</h2>
         </div>
 
-        <div id="teamList"></div>
+        <div id="teamList">
+            
+        </div>
 
     </div>
 
     <script>
+        
         let team = [
             { name: "مهند العطوي", id: "451003131", role: "اشتغل على الواجهة الرئيسية" },
             { name: "علي حسن بن العكرش", id: "431011676", role: "اشتغل على صفحتين الفريق والتواصل" },
@@ -118,8 +121,7 @@
             { name: "تركي العنزي", id: "461008614", role: "اشتغل على صفحة الخدمات" },
             { name: "مهند الزهراني", id: "461004558", role: "اشتغل على صفحة الأماكن" }
         ];
-
-        // خلط عشوائي
+        
         team.sort(() => Math.random() - 0.5);
 
         let container = document.getElementById("teamList");
@@ -129,7 +131,6 @@
             let div = document.createElement("div");
             div.className = "member";
             div.style.animationDelay = (index * 0.25) + "s";
-
             div.innerHTML = `
                 <i class="fa-solid fa-user"></i> 
                 <div class="member-details">
@@ -138,9 +139,11 @@
                 </div>`;
 
             container.appendChild(div);
-        });
-    </script>
 
+        });
+
+            
+    </script>
 </body>
 
 </html>

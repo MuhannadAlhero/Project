@@ -43,7 +43,7 @@ nav ul li a i {
 }
 
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../src/MECA_Background.jpg') center/cover no-repeat;
+    background:  url('../src/MECA_Background.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
